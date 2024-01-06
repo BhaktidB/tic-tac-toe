@@ -9,9 +9,9 @@ const GameContainerLogic = () => {
     const [player, setPlayer] = useState("X");
 
     let [tieFlag, setTieFlag] = useState(false);
-    let [youScore, setYouScore] = useState(parseInt(window.localStorage.getItem('YOU_SCORE'), 10) ?? 0);
-    let [compScore, setCompScore] = useState(parseInt(window.localStorage.getItem('COMP_SCORE'), 10) ?? 0);
-    let [tieScore, setTieScore] = useState(parseInt(window.localStorage.getItem('TIE_SCORE'), 10) ?? 0);
+    let [youScore, setYouScore] = useState(parseInt((window.localStorage.getItem('YOU_SCORE')?window.localStorage.getItem('YOU_SCORE'):window.localStorage.setItem('YOU_SCORE',0)), 10) ?? 0);
+    let [compScore, setCompScore] = useState(parseInt((window.localStorage.getItem('COMP_SCORE')?window.localStorage.getItem('COMP_SCORE'):window.localStorage.setItem('COMP_SCORE',0)), 10) ?? 0);
+    let [tieScore, setTieScore] = useState(parseInt((window.localStorage.getItem('TIE_SCORE')?window.localStorage.getItem('TIE_SCORE'):window.localStorage.setItem('TIE_SCORE',0)), 10) ?? 0);
 
 
     useEffect(() => {
