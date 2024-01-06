@@ -1,0 +1,24 @@
+.inviteBtn{
+    border: none;
+    border-radius: 5px;
+    height: 5vmin;
+    width: 25vmin;
+    font-size: x-small;
+    font-weight: 700;
+    color: rgba(25, 42, 50, 1);
+    background-color: rgba(242, 178, 55, 1);
+    margin-top: 6vmin;
+}
+
+.inviteCopyBtn{
+    background-color: rgba(25, 42, 50, 1);
+    color: rgba(242, 178, 55, 1);
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    /* visibility: hidden; */
+}

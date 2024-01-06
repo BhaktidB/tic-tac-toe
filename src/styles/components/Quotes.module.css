@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    width: 200px;
+    height: auto;
+    background-color: rgba(25, 42, 50, 1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.heading{
+color: rgba(49, 196, 190, 1);
+}
+
+.quotes{
+    color: rgba(242, 178, 55, 1);
+}
+
+img{
+    height: 25px;
+}

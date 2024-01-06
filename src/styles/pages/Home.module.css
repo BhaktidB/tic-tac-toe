@@ -1,0 +1,118 @@
+/* npm install --save-dev css-loader */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+height: 100vmin;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gameDisplay{
+    height: 90vmin;
+    width: 50vmin;
+    background-color: rgba(25, 42, 50, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pickPlayerDiv{
+    height: 20vmin;
+    width: 40vmin;
+    background-color: rgba(31, 53, 64, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pickp{
+    color: rgba(255, 255, 255, 1);
+}
+
+.pickPlayerDiv span{
+    height: 7vmin;
+    width: 32vmin;
+    background-color:rgba(25, 42, 50, 1);
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.unclicked{
+    width: 15vmin;
+    height: 5vmin;
+    background-color: rgba(25, 42, 50, 1);
+    color: rgba(217, 217, 217, 1);
+    border: none;
+    font-size: larger;
+    font-weight: 800;
+    margin: 1vmin 0.5vmin;
+    border-radius:5px;
+
+}
+
+.clicked{
+    width: 15vmin;
+    height: 5vmin;
+    border-radius:5px;
+    color: rgba(25, 42, 50, 1);
+    border: none;
+    font-size: larger;
+    font-weight: 800;
+    margin: 1vmin 0.5vmin;
+    background-color: rgba(217, 217, 217, 1);
+
+}
+.xBtn,
+.oBtn{
+    width: 15vmin;
+    height: 5vmin;
+    color: rgba(217, 217, 217, 1);
+    background-color: rgba(25, 42, 50, 1);
+    border: none;
+    font-size: larger;
+    font-weight: 800;
+    margin-top: 1vmin;
+    border-radius: 5px;
+}
+
+.vsHuman{
+    border: none;
+    border-radius: 5px;
+    height: 5vmin;
+    width: 40vmin;
+    font-size: x-small;
+    font-weight: 700;
+    color: rgba(25, 42, 50, 1);
+    background-color: rgba(50, 196, 195, 1);
+    
+}
+a:-webkit-any-link {
+    color: rgba(25, 42, 50, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.vsComputer{
+    border: none;
+    border-radius: 5px;
+    height: 5vmin;
+    width: 40vmin;
+    font-size: x-small;
+    font-weight: 700;
+    color: rgba(25, 42, 50, 1);
+    background-color: rgba(242, 178, 55, 1);
+}
+

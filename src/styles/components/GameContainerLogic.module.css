@@ -1,0 +1,12 @@
+
+.gameContainer{
+    height: 45vmin;
+    width: 40vmin;
+    background-color: rgba(25, 42, 50, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+

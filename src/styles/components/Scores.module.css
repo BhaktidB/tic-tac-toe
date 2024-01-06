@@ -1,0 +1,55 @@
+
+
+.span1{
+    text-align: center;
+    height: 8vmin;
+    width: 12vmin;
+    min-width: fit-content;
+    padding: 0.5vmin;
+    border-radius: 8px;
+    background-color: rgba(49, 196, 190, 1);
+}
+.span2{
+    text-align: center;
+    height: 8vmin;
+    width: 12vmin;
+    min-width: fit-content;
+    padding: 0.5vmin;
+    border-radius: 8px;
+    background-color: rgba(168, 190, 201, 1);
+}
+.span3{
+    text-align: center;
+    height: 8vmin;
+    width: 12vmin;
+    min-width: fit-content;
+    padding: 0.5vmin;
+    border-radius: 8px;
+    background-color: rgba(242, 178, 55, 1);
+}
+
+p{
+    color: rgba(30, 30, 30, 1);
+    font-weight: 600;
+    font-size: 2vmin;
+}
+
+.updateScoreX{
+    /* color: red; */
+    font-weight: 800;
+    font-size: large;
+    background-color: rgba(49, 196, 190, 1);
+}
+
+.updateScoreTie{
+    /* color: red; */
+    font-weight: 800;
+    font-size: large;
+    background-color: rgba(168, 190, 201, 1);
+}
+.updateScore0{
+    /* color: red; */
+    font-weight: 800;
+    font-size: large;
+    background-color: rgba(242, 178, 55, 1);
+}
