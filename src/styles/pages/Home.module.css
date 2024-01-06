@@ -1,19 +1,19 @@
 /* npm install --save-dev css-loader */
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.container{
-height: 100vmin;
-display: flex;
-justify-content: center;
-align-items: center;
+.container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gameDisplay{
+.gameDisplay {
     height: 90vmin;
     width: 50vmin;
     background-color: rgba(25, 42, 50, 1);
@@ -25,7 +25,7 @@ align-items: center;
     gap: 20px;
 }
 
-.pickPlayerDiv{
+.pickPlayerDiv {
     height: 20vmin;
     width: 40vmin;
     background-color: rgba(31, 53, 64, 1);
@@ -37,20 +37,20 @@ align-items: center;
     align-items: center;
 }
 
-.pickp{
+.pickp {
     color: rgba(255, 255, 255, 1);
 }
 
-.pickPlayerDiv span{
+.pickPlayerDiv span {
     height: 7vmin;
     width: 32vmin;
-    background-color:rgba(25, 42, 50, 1);
+    background-color: rgba(25, 42, 50, 1);
     border-radius: 7px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 
-.unclicked{
+.unclicked {
     width: 15vmin;
     height: 5vmin;
     background-color: rgba(25, 42, 50, 1);
@@ -59,14 +59,14 @@ align-items: center;
     font-size: larger;
     font-weight: 800;
     margin: 1vmin 0.5vmin;
-    border-radius:5px;
+    border-radius: 5px;
 
 }
 
-.clicked{
+.clicked {
     width: 15vmin;
     height: 5vmin;
-    border-radius:5px;
+    border-radius: 5px;
     color: rgba(25, 42, 50, 1);
     border: none;
     font-size: larger;
@@ -75,8 +75,9 @@ align-items: center;
     background-color: rgba(217, 217, 217, 1);
 
 }
+
 .xBtn,
-.oBtn{
+.oBtn {
     width: 15vmin;
     height: 5vmin;
     color: rgba(217, 217, 217, 1);
@@ -88,7 +89,7 @@ align-items: center;
     border-radius: 5px;
 }
 
-.vsHuman{
+.vsHuman {
     border: none;
     border-radius: 5px;
     height: 5vmin;
@@ -97,15 +98,16 @@ align-items: center;
     font-weight: 700;
     color: rgba(25, 42, 50, 1);
     background-color: rgba(50, 196, 195, 1);
-    
+
 }
+
 a:-webkit-any-link {
     color: rgba(25, 42, 50, 1);
     cursor: pointer;
     text-decoration: none;
 }
 
-.vsComputer{
+.vsComputer {
     border: none;
     border-radius: 5px;
     height: 5vmin;
@@ -115,4 +117,3 @@ a:-webkit-any-link {
     color: rgba(25, 42, 50, 1);
     background-color: rgba(242, 178, 55, 1);
 }
-

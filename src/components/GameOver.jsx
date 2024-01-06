@@ -7,7 +7,7 @@ const GameOver = () => {
 
     return (
         <>
-        
+
             <span className={styles.blackScreen}></span>
             <div className={styles.board}>
 
@@ -17,9 +17,7 @@ const GameOver = () => {
                     <p className={styles.winner}>TAKES THE ROUND</p>
                 </span>
                 <span className={styles.victorSpan}>
-                    {/* quit butn */}
                     <QuitBtn />
-                    {/* next */}
                     <NextBtn text={'NEXT ROUND'} />
                 </span>
             </div>

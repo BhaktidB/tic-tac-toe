@@ -6,7 +6,6 @@ const RefreshBtn = ({handleRefresh}) => {
   
   return (<>
   <div>
-
     <img src="/svgs/refresh.svg" alt="refresh button" className={styles.rimg} onClick={handleRefresh} />
   </div>
   </>

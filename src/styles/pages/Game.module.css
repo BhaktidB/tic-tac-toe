@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .container {
     height: 100vmin;
     display: flex;
@@ -23,27 +22,6 @@
     align-items: center;
     gap: 20px;
 }
-
-/* .gameContainer{
-    height: 45vmin;
-    width: 40vmin;
-    background-color: rgba(25, 42, 50, 1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2vmin;
-}
-
-.box{
-    background-color: rgba(31, 53, 64, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 12vmin;
-    width: 12vmin;
-    border-radius: 5px;
-    text-align: center;
-    border: none;
-} */
 
 .play0{
     background-repeat: no-repeat;
@@ -65,5 +43,10 @@
     width: 40vmin;
     display: flex;
     justify-content: space-between;
+    
 }
 
+.trybutton{
+    height: 50px;
+    width: 50px;
+}

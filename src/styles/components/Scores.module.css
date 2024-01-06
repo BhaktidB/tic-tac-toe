@@ -1,5 +1,3 @@
-
-
 .span1{
     text-align: center;
     height: 8vmin;
@@ -35,20 +33,17 @@ p{
 }
 
 .updateScoreX{
-    /* color: red; */
     font-weight: 800;
     font-size: large;
     background-color: rgba(49, 196, 190, 1);
 }
 
 .updateScoreTie{
-    /* color: red; */
     font-weight: 800;
     font-size: large;
     background-color: rgba(168, 190, 201, 1);
 }
 .updateScore0{
-    /* color: red; */
     font-weight: 800;
     font-size: large;
     background-color: rgba(242, 178, 55, 1);

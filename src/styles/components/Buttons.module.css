@@ -6,4 +6,8 @@
     border-radius: 5px;
     text-align: center;
     border: none;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10vmin;
 }

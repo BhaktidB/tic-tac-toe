@@ -1,28 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/components/Buttons.module.css'
 
-const Buttons = ({ index, tile,onClickHandler }) => {
+const Buttons = ({ index, tile, onClickHandler }) => {
 
-    const show0 = {
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: '10vmin',
-        backgroundImage: "url('/svgs/O.svg')" 
-      };
-    
-      const showX = {
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: '10vmin',
-        backgroundImage: "url('/svgs/X.svg')" 
-      };
 
-      const handleButtonClick = () => {
-        onClickHandler(index);
-      };
+  const [backgroundImage, setBackgroundImage] = useState('');
+
+  useEffect(() => {
+    if (tile === 'O') {
+      setBackgroundImage('url("/public/svgs/O.svg")');
+
+    } else if (tile === 'X') {
+      setBackgroundImage('url("/public/svgs/X.svg")');
+
+    }
+  }, [tile]);
+
+  const handleButtonClick = () => {
+    onClickHandler(index);
+  };
 
   return (
-<button className={styles.box} onClick={handleButtonClick}>{tile}</button>
+    <button className={styles.box} onClick={handleButtonClick} style={{ backgroundImage }}>{tile}</button>
   )
 }
 

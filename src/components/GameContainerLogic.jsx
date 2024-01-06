@@ -8,18 +8,11 @@ const GameContainerLogic = () => {
     const [boardData, setBoardData] = useState(Array(9).fill(null));
     const [player, setPlayer] = useState("X");
 
-    // let [youScore, setYouScore] = useState(0);
     let [tieFlag, setTieFlag] = useState(false);
-    // let [tieScore, setTieScore] = useState(0);
-    // let [compScore, setCompScore] = useState(0);
-    
     let [youScore, setYouScore] = useState(parseInt(window.localStorage.getItem('YOU_SCORE'), 10) ?? 0);
-let [compScore, setCompScore] = useState(parseInt(window.localStorage.getItem('COMP_SCORE'), 10) ?? 0);
-let [tieScore, setTieScore] = useState(parseInt(window.localStorage.getItem('TIE_SCORE'), 10) ?? 0);
+    let [compScore, setCompScore] = useState(parseInt(window.localStorage.getItem('COMP_SCORE'), 10) ?? 0);
+    let [tieScore, setTieScore] = useState(parseInt(window.localStorage.getItem('TIE_SCORE'), 10) ?? 0);
 
-
-    
-   
 
     useEffect(() => {
         if (player === "O") {
@@ -38,14 +31,12 @@ let [tieScore, setTieScore] = useState(parseInt(window.localStorage.getItem('TIE
                 updateBoard(computerMove);
             }, 500);
 
-            if(emptyCells.length===0){
+            if (emptyCells.length === 0) {
                 setTieFlag(true)
             }
 
         }
     }, [player, boardData]);
-
-console.log(tieScore)
 
     const checkForWinner = () => {
         const winningCombos = [
@@ -72,11 +63,12 @@ console.log(tieScore)
 
         return null;
     };
-    const winner=checkForWinner()
+    const winner = checkForWinner()
 
 
     const switchPlayer = () => {
         setPlayer(player === "X" ? "O" : "X");
+
     };
 
     const updateBoard = (index) => {
@@ -86,49 +78,40 @@ console.log(tieScore)
             setBoardData(newBoardData);
             switchPlayer();
         }
-
-       
     };
 
     useEffect(() => {
-        console.log(winner + 'hoho');
         if (winner === 'X') {
             youScore = parseInt(window.localStorage.getItem('YOU_SCORE'), 10) || 0;
             youScore = youScore + 1;
             setYouScore(youScore);
             window.localStorage.setItem('YOU_SCORE', youScore.toString());
-            console.log(youScore + 'hoho');
         } else if (winner === 'O') {
-             compScore = parseInt(window.localStorage.getItem('COMP_SCORE'), 10) || 0;
+            compScore = parseInt(window.localStorage.getItem('COMP_SCORE'), 10) || 0;
             compScore = compScore + 1;
             setCompScore(compScore);
             window.localStorage.setItem('COMP_SCORE', compScore.toString());
-            console.log(compScore + 'hihi');
-        }else if(tieFlag){
-            tieScore=parseInt(window.localStorage.getItem('TIE_SCORE'),10) ||0;
-            tieScore=tieScore+1;
+        } else if (tieFlag) {
+            tieScore = parseInt(window.localStorage.getItem('TIE_SCORE'), 10) || 0;
+            tieScore = tieScore + 1;
             setTieScore(tieScore);
-            window.localStorage.setItem('TIE_SCORE',tieScore.toString());
-            console.log(tieScore + 'hihi');
+            window.localStorage.setItem('TIE_SCORE', tieScore.toString());
 
         }
     }, [winner]);
 
-    
+
 
     return (
         <div className={styles.gameContainer} >
             {boardData.map((tile, index) => {
                 return <Buttons key={index} index={index} tile={tile} onClickHandler={(index) => updateBoard(index)} />;
             })}
-            
-<div className={styles.scoreContainer}>
-            <Scores youScore={youScore} tieScore={tieScore} compScore={compScore}/>
-          </div>
 
-            {/* <p>You: {window.localStorage.getItem('YOU_SCORE')}</p>
-            <p>Comp: {window.localStorage.getItem('COMP_SCORE')}</p>
-            <p>Tie: {window.localStorage.getItem('TIE_SCORE')}</p> */}
+            <div className={styles.scoreContainer}>
+                <Scores youScore={youScore} tieScore={tieScore} compScore={compScore} />
+            </div>
+
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState,useRef } from 'react'
 import Logo from '../components/Logo';
 import styles from '../styles/pages/Game.module.css'
 import TurnBtn from '../components/TurnBtn';
-import Scores from '../components/Scores';
+import Quotes from '../components/Quotes';
 import RefreshBtn from '../components/RefreshBtn';
 import GameOver from '../components/GameOver';
 import OnRefresh from '../components/OnRefresh';
@@ -18,23 +18,18 @@ const Game = () => {
       setIsVisibleRefresh(true)
   }
 
+
   return (
     <>
       {/* <Quotes /> */}
       <div className={styles.container}>
         <div className={styles.gameDisplay}>
-
-
           <div className={styles.arrange}>
             <Logo />
             <TurnBtn />
             <RefreshBtn handleRefresh={handleRefresh}/>
           </div>
-          <GameContainerLogic />
-          {/* score updater */}
-          
-
-          {/* {showGameOverComp && <GameOver />} */}
+          <GameContainerLogic />          
           {isVisibleRefresh && <OnRefresh />}
 
         </div>
