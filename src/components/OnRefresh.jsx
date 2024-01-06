@@ -8,6 +8,7 @@ const OnRefresh = () => {
   const [isVisible, setIsVisible] = useState(true);
 
 const handleNextClick = () => {
+  window.location.reload(false)
     setIsVisible(false);
 }
 

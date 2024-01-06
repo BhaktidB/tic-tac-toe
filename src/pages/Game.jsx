@@ -13,18 +13,10 @@ const Game = () => {
 
   const [isVisibleRefresh, setIsVisibleRefresh] = useState(false);
 
-  useEffect(()=>{
-    // setIsVisibleRefresh(false);
-
-
-  },[isVisibleRefresh])
-
   const handleRefresh=()=>{
   
       setIsVisibleRefresh(true)
-      
   }
-  // setIsVisibleRefresh(false)
 
   return (
     <>
@@ -40,9 +32,7 @@ const Game = () => {
           </div>
           <GameContainerLogic />
           {/* score updater */}
-          <div className={styles.scoreContainer}>
-            <Scores />
-          </div>
+          
 
           {/* {showGameOverComp && <GameOver />} */}
           {isVisibleRefresh && <OnRefresh />}

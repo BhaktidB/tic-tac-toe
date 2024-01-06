@@ -10,3 +10,16 @@
     gap: 2vmin;
 }
 
+.arrange{
+    width: 40vmin;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4vmin;
+    padding-left: 2vmin;
+}
+
+.scoreContainer{
+    width: 40vmin;
+    display: flex;
+    justify-content: space-between;
+}

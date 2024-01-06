@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../styles/components/GameContainerLogic.module.css'
 import Buttons from './Buttons';
+import Scores from './Scores';
 
 const GameContainerLogic = () => {
 
@@ -120,11 +121,14 @@ console.log(tieScore)
             {boardData.map((tile, index) => {
                 return <Buttons key={index} index={index} tile={tile} onClickHandler={(index) => updateBoard(index)} />;
             })}
+            
+<div className={styles.scoreContainer}>
+            <Scores youScore={youScore} tieScore={tieScore} compScore={compScore}/>
+          </div>
 
-            {/* <button onClick={incrementScores}>click</button> */}
-            <p>You: {window.localStorage.getItem('YOU_SCORE')}</p>
+            {/* <p>You: {window.localStorage.getItem('YOU_SCORE')}</p>
             <p>Comp: {window.localStorage.getItem('COMP_SCORE')}</p>
-            <p>Tie: {window.localStorage.getItem('TIE_SCORE')}</p>
+            <p>Tie: {window.localStorage.getItem('TIE_SCORE')}</p> */}
         </div>
     )
 }
