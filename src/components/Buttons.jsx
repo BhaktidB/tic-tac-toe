@@ -8,10 +8,10 @@ const Buttons = ({ index, tile, onClickHandler }) => {
 
   useEffect(() => {
     if (tile === 'O') {
-      setBackgroundImage('url("/public/svgs/O.svg")');
+      setBackgroundImage('url("/svgs/O.svg")');
 
     } else if (tile === 'X') {
-      setBackgroundImage('url("/public/svgs/X.svg")');
+      setBackgroundImage('url("/svgs/X.svg")');
 
     }
   }, [tile]);

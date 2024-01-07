@@ -12,7 +12,6 @@ const OnRefresh = () => {
     setIsVisible(false);
   }
 
-
   return (
     <> {isVisible && (
       <>
